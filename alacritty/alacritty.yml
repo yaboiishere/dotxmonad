@@ -1,0 +1,11 @@
+window:
+  opacity: 0.5
+  padding:
+    x: 0
+    y: 0
+
+font:
+  size: 9
+
+key_bindings:
+  - { key: F13,        mods: None,     chars: "" }
