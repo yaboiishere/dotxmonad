@@ -1,0 +1,14 @@
+*
+!./alacritty/
+!./deadd/
+!./flameshot/
+!./logid.cfg
+!./nvim/
+!./pavucontrol.ini
+!./polybar/
+!./scripts/
+!./.xinitrc
+!./.Xmodmap
+!./xmonad/
+!./.zshrc
+!./.gitignore
