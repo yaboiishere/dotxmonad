@@ -119,5 +119,9 @@ alias nvim_config="cd ~/.config/nvim && v"
 alias xmonad_config="cd ~/.config/xmonad && v"
 alias xinitrc="v ~/.xinitrc"
 
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform

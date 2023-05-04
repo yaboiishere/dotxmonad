@@ -98,6 +98,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) =
       -- Move focus to the next window
       ((modm, xK_j), windows W.focusDown),
       -- Move focus to the previous window
+      ((modm .|. shiftMask, xK_Tab), windows W.focusUp),
+      -- Move focus to the previous window
       ((modm, xK_k), windows W.focusUp),
       -- Move focus to the master window
       ((modm, xK_m), windows W.focusMaster),
@@ -268,7 +270,7 @@ myStartupHook = do
 
   spawnOnOnce "2" "google-chrome-stable --profile-directory='Profile 1'"
   spawnOnOnce "8" "thunderbird"
-  spawnOnOnce "8" "rocketchat-desktop"
+  spawnOnOnce "8" "mattermost-desktop"
   spawnOnOnce "0" "google-chrome-stable --profile-directory=Default"
   spawnOnOnce "9" "discord"
   spawnOnOnce "9" "spotify"
