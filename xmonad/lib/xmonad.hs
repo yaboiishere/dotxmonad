@@ -133,6 +133,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) =
       -- Screenshot
       ((0, xK_Print), spawn "flameshot gui"),
       ((modm, xK_Print), spawn "flameshot screen -p ~/Pictures"),
+      ((modm .|. shiftMask, xK_s), spawn "flameshot gui"),
       -- Media Keys
       ((0, xF86XK_AudioLowerVolume), spawn "amixer -q set Master 5%-"),
       ((0, xF86XK_AudioRaiseVolume), spawn "amixer -q set Master 5%+"),
@@ -142,8 +143,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) =
       ((0, xF86XK_AudioNext), spawn "playerctl next"),
       ((0, xF86XK_AudioPrev), spawn "playerctl previous"),
       ((0, xF86XK_AudioStop), spawn "playerctl stop"),
-      ((0, xF86XK_MonBrightnessUp), spawn "xbacklight -inc 10"),
-      ((0, xF86XK_MonBrightnessDown), spawn "xbacklight -dec 10"),
+      ((0, xF86XK_MonBrightnessUp), spawn "light -A 5"),
+      ((0, xF86XK_MonBrightnessDown), spawn "light -U 5"),
       ((altMask, xK_Shift_L), spawn "~/.config/scripts/cycle-keyboard-layout us bg")
     ]
       ++
