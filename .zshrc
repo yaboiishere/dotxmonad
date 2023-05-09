@@ -114,6 +114,14 @@ fi
 alias v="nvim"
 alias genhub="cd ~/work/genhub/ && v"
 alias genhub_docker="cd ~/work/genhub/ && docker-compose up"
+alias genhub_docker_down="cd ~/work/genhub/ && docker-compose down"
+alias genhub_infra="cd ~/work/genhub-infra && v"
+alias genhub_terraform="cd ~/work/genhub/infra/terraform"
+alias not_spotify="cd ~/uni/not_spotfiy/ && v"
+alias not_spotify_docker="cd ~/uni/not_spotify/ && docker-compose up"
+alias not_spotify_docker_down="cd ~/uni/not_spotify/ && docker-compose down"
+alias elm_sandbox="cd ~/elm/sandbox/ && v"
+alias aio="~/.config/tmux/aio.sh"
 alias zshrc="v ~/.zshrc"
 alias nvim_config="cd ~/.config/nvim && v"
 alias xmonad_config="cd ~/.config/xmonad && v"
@@ -125,3 +133,6 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
+
+export FLYCTL_INSTALL="/home/misho/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"

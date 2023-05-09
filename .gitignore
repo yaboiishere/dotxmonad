@@ -20,3 +20,4 @@ xmonad/xmonad.errors
 !.zshrc
 !.gitignore
 !backgrounds/
+!tmux/

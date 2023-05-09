@@ -410,7 +410,7 @@ myWindowIcons =
       ("Zotero", "\xf02d"),
       ("Signal", "\xfceb"),
       ("thunderbird", "\xf0e0"),
-      ("discord", "\xfb6e"),
+      ("discord", "\xf392"),
       ("Postman", "\xf1d8"),
       ("Slack", "\xf9b0"),
       ("vlc", "\xfa7b"),
