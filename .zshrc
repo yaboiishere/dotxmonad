@@ -112,15 +112,26 @@ if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 fi
 
 alias v="nvim"
-alias genhub="cd ~/work/genhub/ && v"
-alias genhub_docker="cd ~/work/genhub/ && docker-compose up"
-alias genhub_docker_down="cd ~/work/genhub/ && docker-compose down"
-alias genhub_infra="cd ~/work/genhub-infra && v"
+
+alias genhub_dir="cd ~/work/genhub/"
+alias genhub="genhub_dir && v"
+alias genhub_docker="genhub_dir && docker-compose up"
+alias genhub_docker_down="genhub_dir && docker-compose down"
+
+alias genhub_infra_dir="cd ~/work/genhub-infra/"
+alias genhub_infra="genhub_infra_dir && v"
 alias genhub_terraform="cd ~/work/genhub/infra/terraform"
-alias not_spotify="cd ~/uni/not_spotfiy/ && v"
-alias not_spotify_docker="cd ~/uni/not_spotify/ && docker-compose up"
-alias not_spotify_docker_down="cd ~/uni/not_spotify/ && docker-compose down"
+
+alias not_spotify_dir="cd ~/uni/not_spotify/"
+alias not_spotify="not_spotify_dir && v"
+alias not_spotify_docker="not_spotify_dir && docker-compose up"
+alias not_spotify_docker_down="not_spotify_dir && docker-compose down"
+
 alias elm_sandbox="cd ~/elm/sandbox/ && v"
+
+alias elm_shenanigans_dir="cd ~/elm/elm_shenanigans/"
+alias elm_shenanigans="elm_shenanigans_dir && v"
+
 alias aio="~/.config/tmux/aio.sh"
 alias zshrc="v ~/.zshrc"
 alias nvim_config="cd ~/.config/nvim && v"
@@ -128,8 +139,6 @@ alias xmonad_config="cd ~/.config/xmonad && v"
 alias xinitrc="v ~/.xinitrc"
 
 export ERL_AFLAGS="-kernel shell_history enabled"
-
-
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
