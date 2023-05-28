@@ -5,7 +5,10 @@ window:
     y: 0
 
 font:
-  size: 9
+  size: 8
+  normal:
+    family: Cascadia Code
+    style: Regular
 
 enable_rgb: true
 

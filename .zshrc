@@ -113,6 +113,14 @@ fi
 
 alias v="nvim"
 
+alias averato_dir="cd ~/work/averato_core/"
+alias averato="averato_dir && v"
+alias averato_docker="averato_dir && docker-compose up"
+alias averato_docker_down="averato_dir && docker-compose down"
+
+alias averato_frontend_dir="cd ~/work/averato_frontend_new/"
+alias averato_frontend="averato_frontend_dir && v"
+
 alias genhub_dir="cd ~/work/genhub/"
 alias genhub="genhub_dir && v"
 alias genhub_docker="genhub_dir && docker-compose up"
@@ -120,7 +128,7 @@ alias genhub_docker_down="genhub_dir && docker-compose down"
 
 alias genhub_infra_dir="cd ~/work/genhub-infra/"
 alias genhub_infra="genhub_infra_dir && v"
-alias genhub_terraform="cd ~/work/genhub/infra/terraform"
+alias genhub_terraform="cd ~/work/genhub-infra/terraform"
 
 alias not_spotify_dir="cd ~/uni/not_spotify/"
 alias not_spotify="not_spotify_dir && v"
@@ -145,3 +153,5 @@ complete -o nospace -C /usr/bin/terraform terraform
 
 export FLYCTL_INSTALL="/home/misho/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+alias cat=bat --paging=never
