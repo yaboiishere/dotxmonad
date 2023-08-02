@@ -22,16 +22,20 @@ else
   send-keys 'averato_frontend_dir && yarn dev' #C-m
 
   window=3
-  tmux new-window -t $session:$window -n 'elm_shenanigans' \; \
-  send-keys -t $session:$window 'elm_shenanigans' C-m \; \
-  split-window -h \; \
-  send-keys 'elm_shenanigans_dir && elm reactor' #C-m
+  tmux new-window -t $session:$window -n 'survey_app' \; \
+  send-keys -t $session:$window 'survey_app' C-m \; \
 
-  window=4
-  tmux new-window -t $session:$window -n 'uni/not_spotify' \; \
-  send-keys -t $session:$window 'not_spotify' C-m \; \
-  split-window -h \; \
-  send-keys 'not_spotify_dir && iex --sname not_spotify -S mix phx.server' #C-m
+  # window=3
+  # tmux new-window -t $session:$window -n 'elm_shenanigans' \; \
+  # send-keys -t $session:$window 'elm_shenanigans' C-m \; \
+  # split-window -h \; \
+  # send-keys 'elm_shenanigans_dir && elm reactor' #C-m
+
+  # window=4
+  # tmux new-window -t $session:$window -n 'uni/not_spotify' \; \
+  # send-keys -t $session:$window 'not_spotify' C-m \; \
+  # split-window -h \; \
+  # send-keys 'not_spotify_dir && iex --sname not_spotify -S mix phx.server' #C-m
 
   window=7
   tmux new-window -t $session:$window -n 'genhub-infra' \; \
