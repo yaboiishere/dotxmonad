@@ -70,7 +70,7 @@ ZSH_THEME="agnoster" # set by `omz`
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history-substring-search zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git history-substring-search zsh-autosuggestions zsh-syntax-highlighting kubectl-autocomplete)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,6 +106,7 @@ eval "$(starship init zsh)"
 . /opt/asdf-vm/asdf.sh
 
 path+=("/home/misho/.local/bin")
+path+=("/home/misho/.asdf/installs/rust/stable/bin")
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
   exec startx
