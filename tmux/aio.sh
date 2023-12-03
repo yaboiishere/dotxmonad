@@ -22,8 +22,8 @@ else
   send-keys 'averato_frontend_dir && yarn dev' #C-m
 
   window=3
-  tmux new-window -t $session:$window -n 'survey_app' \; \
-  send-keys -t $session:$window 'survey_app' C-m \; \
+  tmux new-window -t $session:$window -n 'averato_infra' \; \
+  send-keys -t $session:$window 'averato_infra' C-m \; \
 
   # window=3
   # tmux new-window -t $session:$window -n 'elm_shenanigans' \; \
