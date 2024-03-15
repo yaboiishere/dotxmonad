@@ -141,6 +141,9 @@ alias elm_sandbox="cd ~/elm/sandbox/ && v"
 alias elm_shenanigans_dir="cd ~/elm/elm_shenanigans/"
 alias elm_shenanigans="elm_shenanigans_dir && v"
 
+alias ae_dir="cd ~/work/ae_mdw/"
+alias ae="ae_dir && v"
+
 alias aio="~/.config/tmux/aio.sh"
 alias zshrc="v ~/.zshrc"
 alias nvim_config="cd ~/.config/nvim && v"

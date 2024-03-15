@@ -12,16 +12,20 @@ else
   tmux send-keys -t $session:$window 'nvim_config' C-m
 
   window=1
+  tmux new-window -t $session:$window -n 'ae_mdw' \; \
+  send-keys -t $session:$window 'ae_mdw' C-m \; \
+
+  window=6
   tmux new-window -t $session:$window -n 'averato' \; \
   send-keys -t $session:$window 'averato' C-m \; \
 
-  window=2
+  window=8
   tmux new-window -t $session:$window -n 'averato_frontend' \; \
   send-keys -t $session:$window 'averato_frontend' C-m \; \
   split-window -h \; \
   send-keys 'averato_frontend_dir && yarn dev' #C-m
 
-  window=3
+  window=7
   tmux new-window -t $session:$window -n 'averato_infra' \; \
   send-keys -t $session:$window 'averato_infra' C-m \; \
 
