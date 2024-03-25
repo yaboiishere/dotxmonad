@@ -21,3 +21,4 @@ xmonad/xmonad.errors
 !.gitignore
 !backgrounds/
 !tmux/
+!greenclip.toml
