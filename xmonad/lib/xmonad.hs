@@ -135,7 +135,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) =
       ((modm, xK_Print), spawn "flameshot screen -p ~/Pictures"),
       ((modm .|. shiftMask, xK_s), spawn "flameshot gui"),
       -- Clipboard rofi-greenclip
-      ((modm, xK_v), spawn "rofi -modi \"clipboard:greenclip print\" -show clipboard -run-command '{cmd}'"),
+      ((modm, xK_v), spawn "rofi -modi \"clipboard:greenclip print\" -show clipboard -run-command '{cmd}' ; sleep 0.5; xdotool type $(xclip -o -selection clipboard)"),
       -- Media Keys
       ((0, xF86XK_AudioLowerVolume), spawn "amixer -q set Master 5%-"),
       ((0, xF86XK_AudioRaiseVolume), spawn "amixer -q set Master 5%+"),
@@ -270,6 +270,7 @@ myStartupHook = do
   spawn "~/.config/polybar/launch.sh"
   spawnOnce "deadd-notification-center &"
   spawnOnce "flameshot &"
+  spawn "greenclip daemon &"
 
   spawnOnOnce "2" "google-chrome-stable --profile-directory='Profile 1'"
   spawnOnOnce "8" "thunderbird"
