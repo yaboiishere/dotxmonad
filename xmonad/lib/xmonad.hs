@@ -423,7 +423,13 @@ myWindowIcons =
       ("Telegram", "\xf2c6"),
       ("TelegramDesktop", "\xf2c6"),
       ("qBittorrent", "\xf019"),
-      ("Mattermost", "\xf232")
+      ("Mattermost", "\xf232"),
+      ("jetbrains-toolbox", "\xf0ad"),
+      ("jetbrains-idea", "\xf121"),
+      ("jetbrains-pycharm", "\xf121"),
+      ("jetbrains-datagrip", "\xf1c0"),
+      ("jetbrains-rubymine", "\xf219"),
+      ("jetbrains-writerside", "\xf02d")
     ]
 
 sendWorkspaceNames :: String -> X ()
