@@ -411,17 +411,19 @@ myWindowIcons =
       ("Kodi", "\xf03d"),
       ("Transmission-gtk", "\xf019"),
       ("Zotero", "\xf02d"),
-      ("Signal", "\xfceb"),
+      ("Signal", "\xf0e5"),
       ("thunderbird", "\xf0e0"),
       ("discord", "\xf392"),
-      ("Postman", "\xf1d8"),
-      ("Slack", "\xf9b0"),
+      ("Postman", "\xf2d6"),
+      ("Slack", "\xf198"),
       ("vlc", "\xfa7b"),
       ("mpv", "\xf03d"),
       ("dolphin", "\xf413"),
       ("Rocket.Chat", "\xf3e8"),
       ("Telegram", "\xf2c6"),
-      ("TelegramDesktop", "\xf2c6")
+      ("TelegramDesktop", "\xf2c6"),
+      ("qBittorrent", "\xf019"),
+      ("Mattermost", "\xf232")
     ]
 
 sendWorkspaceNames :: String -> X ()
